@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+};
+
+:root {
+  --bg-color: #000000;
+  --bg-alpha: #000000;
+  --primary-color: #f4a261;
+  --primary-alpha: #e76f51;
+  --primary-hover: #e9c46a;
+  --secondary-color: #ffffff;
+  --third-color: #000000;
+  --fourth-color: #000000;
+  --fourth-color-alpha: #27272780;
+  --label-color: #a3a3a3;
+};
+
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--label-color);
+};
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+};
+
+input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+};
+
+.formPrimary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+};
+
+.inputPrimary {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--fourth-color);
+  width: 100%;
+  border: none;
+};
+
+.inputPrimary:focus {
+  outline: 0.15rem solid var(--primary-color);
+};
+
+.btnPrimary {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 3rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+};
+
+.btnPrimary:hover {
+  background-color: var(--primary-hover);
+};
+
+@media (max-width: 768px) {
+.title {
+  font-size: 0.8rem;
+  };
+};
